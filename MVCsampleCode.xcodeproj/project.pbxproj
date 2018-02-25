@@ -14,6 +14,13 @@
 		84E304072042D2FD00A2AB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E304052042D2FD00A2AB95 /* LaunchScreen.storyboard */; };
 		84E304122042D2FD00A2AB95 /* MVCsampleCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304112042D2FD00A2AB95 /* MVCsampleCodeTests.swift */; };
 		84E3041D2042D2FD00A2AB95 /* MVCsampleCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3041C2042D2FD00A2AB95 /* MVCsampleCodeUITests.swift */; };
+		84E3042F2042D38D00A2AB95 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3042E2042D38D00A2AB95 /* NSObjectExtension.swift */; };
+		84E304312042D3AB00A2AB95 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304302042D3AB00A2AB95 /* UITableViewCellExtension.swift */; };
+		84E304332042D3C800A2AB95 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304322042D3C800A2AB95 /* ViewControllerExtension.swift */; };
+		84E304362042D42100A2AB95 /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304342042D42100A2AB95 /* TextViewTableViewCell.swift */; };
+		84E304372042D42100A2AB95 /* TextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E304352042D42100A2AB95 /* TextViewTableViewCell.xib */; };
+		84E304392042D46300A2AB95 /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304382042D46300A2AB95 /* ViewControllerView.swift */; };
+		84E3043B2042D47500A2AB95 /* ViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3043A2042D47500A2AB95 /* ViewControllerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		84E304182042D2FD00A2AB95 /* MVCsampleCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVCsampleCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E3041C2042D2FD00A2AB95 /* MVCsampleCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCsampleCodeUITests.swift; sourceTree = "<group>"; };
 		84E3041E2042D2FD00A2AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E3042E2042D38D00A2AB95 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		84E304302042D3AB00A2AB95 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		84E304322042D3C800A2AB95 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		84E304342042D42100A2AB95 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		84E304352042D42100A2AB95 /* TextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewTableViewCell.xib; sourceTree = "<group>"; };
+		84E304382042D46300A2AB95 /* ViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
+		84E3043A2042D47500A2AB95 /* ViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				84E303FC2042D2FD00A2AB95 /* AppDelegate.swift */,
-				84E303FE2042D2FD00A2AB95 /* ViewController.swift */,
-				84E304002042D2FD00A2AB95 /* Main.storyboard */,
+				84E3042A2042D30D00A2AB95 /* BasesetGroup */,
+				84E3042D2042D31B00A2AB95 /* Extension */,
+				84E3042C2042D31800A2AB95 /* parts */,
 				84E304032042D2FD00A2AB95 /* Assets.xcassets */,
 				84E304052042D2FD00A2AB95 /* LaunchScreen.storyboard */,
 				84E304082042D2FD00A2AB95 /* Info.plist */,
@@ -123,6 +138,36 @@
 				84E3041E2042D2FD00A2AB95 /* Info.plist */,
 			);
 			path = MVCsampleCodeUITests;
+			sourceTree = "<group>";
+		};
+		84E3042A2042D30D00A2AB95 /* BasesetGroup */ = {
+			isa = PBXGroup;
+			children = (
+				84E304382042D46300A2AB95 /* ViewControllerView.swift */,
+				84E303FE2042D2FD00A2AB95 /* ViewController.swift */,
+				84E3043A2042D47500A2AB95 /* ViewControllerModel.swift */,
+				84E304002042D2FD00A2AB95 /* Main.storyboard */,
+			);
+			path = BasesetGroup;
+			sourceTree = "<group>";
+		};
+		84E3042C2042D31800A2AB95 /* parts */ = {
+			isa = PBXGroup;
+			children = (
+				84E304342042D42100A2AB95 /* TextViewTableViewCell.swift */,
+				84E304352042D42100A2AB95 /* TextViewTableViewCell.xib */,
+			);
+			path = parts;
+			sourceTree = "<group>";
+		};
+		84E3042D2042D31B00A2AB95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84E3042E2042D38D00A2AB95 /* NSObjectExtension.swift */,
+				84E304302042D3AB00A2AB95 /* UITableViewCellExtension.swift */,
+				84E304322042D3C800A2AB95 /* ViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E304072042D2FD00A2AB95 /* LaunchScreen.storyboard in Resources */,
+				84E304372042D42100A2AB95 /* TextViewTableViewCell.xib in Resources */,
 				84E304042042D2FD00A2AB95 /* Assets.xcassets in Resources */,
 				84E304022042D2FD00A2AB95 /* Main.storyboard in Resources */,
 			);
@@ -260,7 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E303FF2042D2FD00A2AB95 /* ViewController.swift in Sources */,
+				84E304392042D46300A2AB95 /* ViewControllerView.swift in Sources */,
+				84E3042F2042D38D00A2AB95 /* NSObjectExtension.swift in Sources */,
 				84E303FD2042D2FD00A2AB95 /* AppDelegate.swift in Sources */,
+				84E3043B2042D47500A2AB95 /* ViewControllerModel.swift in Sources */,
+				84E304332042D3C800A2AB95 /* ViewControllerExtension.swift in Sources */,
+				84E304312042D3AB00A2AB95 /* UITableViewCellExtension.swift in Sources */,
+				84E304362042D42100A2AB95 /* TextViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
