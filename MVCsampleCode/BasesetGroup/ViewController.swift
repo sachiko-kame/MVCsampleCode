@@ -10,10 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     var viewControllerModel:ViewControllerModel = ViewControllerModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewControllerModel.tapded = {
+            print("CellのButton押された")
+            self.present(self.defoAlert(Alertdo:{
+                self.logshow()
+            }), animated: true, completion: nil)
+        }
+        
+        (self.view as! ViewControllerView).refreshControl.addTarget(self, action: #selector(tableUpdate(sender:)), for: .valueChanged)
         
     }
 
@@ -24,6 +34,19 @@ class ViewController: UIViewController {
     
     override func loadView() {
         self.view = ViewControllerView(model: viewControllerModel)
+    }
+    
+    func logshow(){
+        print("ログ🐊")
+    }
+    
+    @objc func tableUpdate(sender:UIRefreshControl){
+        print("リフレッシュされた🌼")
+        let cellMultiplyArray = viewControllerModel.sampleArray.map{ $0 * 3 }
+        viewControllerModel.sampleArray = cellMultiplyArray
+        (self.view as! ViewControllerView).tableView.reloadData()
+        (self.view as! ViewControllerView).refreshControl.endRefreshing()
+        
     }
 
 

@@ -9,7 +9,9 @@
 import UIKit
 
 class TextViewTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var tapButton: UIButton!
+    @IBOutlet weak var sampleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -18,4 +20,9 @@ class TextViewTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    static let height:CGFloat = 60
+    
+    func cellSet(Text:Int){
+        self.sampleLabel.text = "\(Text)"
+    }
 }
