@@ -28,6 +28,11 @@ extension ViewControllerModel:UITableViewDelegate{
 
 extension ViewControllerModel:UITableViewDataSource{
     
+    func sampleArraycahnge(){
+        let newsampleArray = sampleArray.map{ $0 * 3 }
+        sampleArray = newsampleArray
+    }
+    
     @objc func buttonTap(sender: UIButton) {
         print("🐥")
         self.tapded!()

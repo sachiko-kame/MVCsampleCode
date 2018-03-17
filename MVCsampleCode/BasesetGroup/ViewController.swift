@@ -41,14 +41,12 @@ class ViewController: UIViewController {
     }
     
     @objc func tableUpdate(sender:UIRefreshControl){
-        print("リフレッシュされた🌼")
-        let cellMultiplyArray = viewControllerModel.sampleArray.map{ $0 * 3 }
-        viewControllerModel.sampleArray = cellMultiplyArray
-        (self.view as! ViewControllerView).tableView.reloadData()
-        (self.view as! ViewControllerView).refreshControl.endRefreshing()
-        
+        viewControllerModel.sampleArraycahnge()
+        (self.view as! ViewControllerView).refre()
     }
-
+    
+    
+    
 
 }
 
